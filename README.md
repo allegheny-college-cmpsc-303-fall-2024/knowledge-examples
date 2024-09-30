@@ -2,14 +2,14 @@
 
 The `logic.py` file contains helpful propositional logic representations using Python such as logic symbols (assertion of reality), logical connectives (and, or, not...), and functions to check the logical representation and entailments (`formula`, `model_check`). And the remaining four files contain the utilization of propositional logics
 
-## Harry
+## Sally
 
-`harry.py contains a simple logic stating that
+`sally.py contains a simple logic stating that
 
-- If it's not raining, then Harry visited Hagrid
-- Harry either visited Hagrid or visited Dumbledore
-- Harry cannot visit both Hagrid and Dumbledore
-- Harry visited Dumbledore
+- If it's not raining, then Sally went to class
+- Sally either went to class and played minecraft  
+- Sally cannot go to class and play minecraft
+- Sally went to class
 
 And by these statements, or assertions of reality, we query that is it raining or not? It should be obvious for us that it is raining, but check out how we can use Python implmentation of propositional logic to let our AI deduce that it is raining
 
@@ -38,3 +38,5 @@ In `examples` directory, run `python mastermind.py`
 Check out `puzzle.py`, where the puzzle is to assign each of the four person to a different house. Four persons are defined in `people` list variable and the four houses are defined in `houses` list variable. We encode in Python that each person must have a house and a house can only be assigned to one person. Then we provide some information for our AI to deduce upon
 
 In `examples` directory, run `python puzzles.py`
+
+**Acknowledgements** These examples are borrowed or adapted from CS50 AI, as [licensed here](https://cs50.harvard.edu/ai/2024/license/). 

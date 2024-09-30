@@ -4,7 +4,7 @@ The `logic.py` file contains helpful propositional logic representations using P
 
 ## Sally
 
-`sally.py contains a simple logic stating that
+`sally.py` contains a simple logic stating that
 
 - If it's not raining, then Sally went to class
 - Sally either went to class and played minecraft  

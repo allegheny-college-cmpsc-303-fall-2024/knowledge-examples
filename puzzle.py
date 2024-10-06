@@ -42,21 +42,7 @@ for homestate in homestates:
             if p1 != p2:
                 knowledge.add(
                     Implication(Symbol(f"{p1}{homestate}"), Not(Symbol(f"{p2}{homestate}")))
-                )
+                    )
+    
 
-# Add some knowledge base for our AI to deduce upon
-knowledge.add(
-    Or(Symbol("ShaboozeyPennsylvania"), Symbol("ShaboozeyVirginia"))
-)
-
-knowledge.add(
-    Not(Symbol("BillieEilishMissouri"))
-)
-
-knowledge.add(
-    Symbol("SabrinaCarpenterPennsylvania")
-)
-
-for symbol in symbols:
-    if model_check(knowledge, symbol):
-        print(symbol)
+print(knowledge.formula())
